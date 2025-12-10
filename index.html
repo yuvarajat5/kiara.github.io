@@ -409,12 +409,19 @@
             border: 1px solid rgba(255, 255, 255, 0.05);
             text-align: center;
             transition: all 0.3s ease;
+            text-decoration: none;
+            display: block;
+            color: inherit;
         }
 
         .contact-card:hover {
             background: rgba(255, 255, 255, 0.04);
             border-color: rgba(255, 255, 255, 0.1);
             transform: translateY(-5px);
+        }
+
+        .contact-card.no-link {
+            cursor: default;
         }
 
         .contact-icon {
@@ -673,26 +680,26 @@
     <section id="contact">
         <h2 class="section-title">Get In Touch</h2>
         <div class="contact-grid">
-            <div class="contact-card fade-in">
+            <div class="contact-card no-link fade-in">
                 <div class="contact-icon">📧</div>
                 <h3>Email</h3>
                 <p>yuvarajat834@gmail.com</p>
             </div>
-            <div class="contact-card fade-in">
+            <div class="contact-card no-link fade-in">
                 <div class="contact-icon">📱</div>
                 <h3>Phone</h3>
                 <p>9008857960</p>
             </div>
-            <div class="contact-card fade-in">
+            <a href="https://github.com/yuvarajat5" target="_blank" class="contact-card fade-in">
                 <div class="contact-icon">💻</div>
                 <h3>GitHub</h3>
                 <p>yuvarajat5</p>
-            </div>
-            <div class="contact-card fade-in">
+            </a>
+            <a href="https://www.linkedin.com/in/yuvaraj-t-b420132b9" target="_blank" class="contact-card fade-in">
                 <div class="contact-icon">💼</div>
                 <h3>LinkedIn</h3>
                 <p>yuvaraj-t-b420132b9</p>
-            </div>
+            </a>
         </div>
     </section>
 
